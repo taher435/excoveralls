@@ -3,8 +3,8 @@ defmodule ExCoveralls.Mixfile do
 
   def project do
     [ app: :excoveralls,
-      version: "0.7.3",
-      elixir: "~> 1.2",
+      version: "0.7.4",
+      elixir: "~> 1.3",
       deps: deps(),
       description: description(),
       package: package(),
@@ -29,7 +29,7 @@ defmodule ExCoveralls.Mixfile do
   def deps do
     [
       {:mock, "~> 0.2.1", only: :test},
-      {:meck, "~> 0.8.4", only: :test},
+      {:meck, "~> 0.8.7", only: :test},
       {:exjsx, ">= 3.0.0"},
       {:hackney, ">= 0.12.0"},
       {:ex_doc, ">= 0.0.0", only: :dev}
